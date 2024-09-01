@@ -30,32 +30,36 @@ function App() {
         background: 'radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%)',
         overflow: 'hidden'
       }}>
-        <StarField/>
-        <Header />
-        <Routes>
-          <Route path="/" element={
-            <>
-              <Navbar setShowCarousel={setShowCarousel} className="z-5"/>
-              {showCarousel && <Carousel className='z-5' />}
-            </>
-          } />
-          <Route path="Clubs/Axiom" element={<Axiom />}/>
-          <Route path="/Clubs/APS" element={<APS />} />
-          <Route path="/Clubs/Cyborg" element={<Cyborg />} />
-          <Route path="/Clubs/FOOTBALL" element={<FOOTBALL />} />
-          <Route path="/Clubs/Opencode" element={<Opencode />} />
-          <Route path="/Clubs/Cognizen" element={<Cognizen />} />
-          <Route path="/Clubs/MUSIC" element={<MUSIC />} />
-          <Route path="/Clubs/ASME" element={<ASME />} />
-          <Route path="/Clubs/Kalaam" element={<Kalaam />} />
-          <Route path="Clubs/Knights" element={<Knights/>}/>
-          <Route path="Clubs/Pantomine" element={<Pantomine />}/>
-          <Route path="Clubs/Ritvic" element={<Ritvic />}/>
-          <Route path="Clubs/Mavericks" element={<Mavericks />}/>
-          <Route path="Clubs/Chitraang" element={<Chitraang />}/>
-          
-        </Routes>
-        <Footer />
+        <div className="flex flex-col min-h-screen">
+            <div className="flex-grow">
+            <StarField/>
+            <Header />
+            <Routes>
+              <Route path="/" element={
+                <>
+                  <Navbar setShowCarousel={setShowCarousel} className="z-5"/>
+                  {showCarousel && <Carousel className='z-5' />}
+                </>
+              } />
+              <Route path="Clubs/Axiom" element={<Axiom />}/>
+              <Route path="/Clubs/APS" element={<APS />} />
+              <Route path="/Clubs/Cyborg" element={<Cyborg />} />
+              <Route path="/Clubs/FOOTBALL" element={<FOOTBALL />} />
+              <Route path="/Clubs/Opencode" element={<Opencode />} />
+              <Route path="/Clubs/Cognizen" element={<Cognizen />} />
+              <Route path="/Clubs/MUSIC" element={<MUSIC />} />
+              <Route path="/Clubs/ASME" element={<ASME />} />
+              <Route path="/Clubs/Kalaam" element={<Kalaam />} />
+              <Route path="Clubs/Knights" element={<Knights/>}/>
+              <Route path="Clubs/Pantomine" element={<Pantomine />}/>
+              <Route path="Clubs/Ritvic" element={<Ritvic />}/>
+              <Route path="Clubs/Mavericks" element={<Mavericks />}/>
+              <Route path="Clubs/Chitraang" element={<Chitraang />}/>
+              
+            </Routes>       
+            </div>
+            <Footer />
+        </div>
       </div>
     </Router>
   );
