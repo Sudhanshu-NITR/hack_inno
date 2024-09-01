@@ -11,6 +11,4 @@ function Header() {
     );
 }
 
-// bg-[#393E46]
-
 export default Header;
