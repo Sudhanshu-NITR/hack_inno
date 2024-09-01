@@ -7,7 +7,7 @@ export default function Knights() {
   };
 
   return (
-    <div className="bg-black p-8 rounded-xl shadow-2xl m-6 max-w-[80%]  mx-auto border-2 border-yellow-600">
+    <div className="relative z-10 bg-black bg-opacity-95 p-8 rounded-xl shadow-2xl m-6 max-w-[80%] mx-auto border-2 border-yellow-600">
       <h2 className="text-4xl font-bold font-serif text-green-600 mb-6 border-b-2 border-blue-200 pb-2 text-center">
       Games & Sports: Knights
       </h2>
@@ -15,7 +15,7 @@ export default function Knights() {
         <div className="">
           <h3 className="text-2xl font-semibold text-white mb-4">About: </h3>
           <p className="text-white text-1xl mb-6">
-Kalaam is the poetry club of NIT Rourkela which promotes poetry in all it's forms and languages. It began with a team of poets, writers and story tellers with a vision to have a platform for nurturing the blissful poetry culture. We at Kalaam believe that through poetry one can bring life to emotions and can express without any fear of judgements. We are a team of writers, poets, designers and instrumentalists with a passion of creating magic through poetry, expressing freely and instilling the same within the audience.
+          The Knights Club is the official chess club of NIT Rourkela which unites a group of chess enthusiasts who love playing the game and promoting it. We believe chess is more than a board and 16 pieces, it's the endless possibilities that we play for.
           </p>
         </div>
         <div className="club-logo float-right">

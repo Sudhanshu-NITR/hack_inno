@@ -7,25 +7,26 @@ export default function Cyborg() {
   };
 
   return (
-    <div className="bg-black p-8 rounded-xl shadow-2xl m-6 max-w-[80%]  mx-auto border-2 border-yellow-600">
+    <div className="relative z-10 bg-black bg-opacity-95 p-8 rounded-xl shadow-2xl m-6 max-w-[80%] mx-auto border-2 border-yellow-600">
       <h2 className="text-4xl font-bold font-serif text-blue-400 mb-6 border-b-2 border-blue-200 pb-2 text-center">
         Technical Society: Cyborg
       </h2>
-      <div className="flex justify-center items-center">
-        <div className="">
+      <div className="flex justify-between items-center">
+        <div className="flex-1 mr-6">
           <h3 className="text-2xl font-semibold text-white mb-4">About: </h3>
           <p className="text-white text-1xl mb-6">
-          Cyborg is the official Robotics and Automation club of NIT Rourkela, registered under SAC. It was founded in 2008 by the students of NIT Rourkela itself. We at Cyborg innovate and develop projects related to robotics and advanced automation. It is the perfect blend of the following engineering disciplines - Computer Science, Electronics, and Mechanical. Some of the current projects include IGV (Intelligent Ground Vehicle), Autonomous Drone (UAV), Room Automation, Stair Climber bot, Vac bot, Librarian bot, Rubik's cube solver etc. We also participate in various robotics challenges of national and international reputation.
+            Cyborg is the official Robotics and Automation club of NIT Rourkela, registered under SAC. It was founded in 2008 by the students of NIT Rourkela itself. We at Cyborg innovate and develop projects related to robotics and advanced automation. It is the perfect blend of the following engineering disciplines - Computer Science, Electronics, and Mechanical. Some of the current projects include IGV (Intelligent Ground Vehicle), Autonomous Drone (UAV), Room Automation, Stair Climber bot, Vac bot, Librarian bot, Rubik's cube solver, etc. We also participate in various robotics challenges of national and international reputation.
           </p>
         </div>
-        <div className="club-logo float-right">
+        <div className="flex-shrink-0">
           <img
             src="https://res.cloudinary.com/webwiznitr/image/upload/f_auto,q_70/v1679160025/Group_14_zfj3sc.png"
-            alt="" className="h-32 w-96 border-blue-400 border-2 rounded-md"  
-          />  
+            alt="Cyborg Logo"
+            className="h-40 w-40 border-blue-400 border-2 rounded-md"
+          />
         </div>
       </div>
-        
+
       <h3 className="text-2xl font-semibold text-white mb-4">Events:</h3>
       <ul className="list-disc list-inside text-1xl text-white space-y-2 pl-4">
         <li className="hover:text-blue-600 transition-colors duration-200">

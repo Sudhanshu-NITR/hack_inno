@@ -11,32 +11,46 @@
   align-items: center;
 }
 
-.image-container{
-  position: absolute;
-  left: 0; 
-  width: 40%;
+.image-container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
 }
 
-.text-container{
-  position:absolute;
-  right: 0;
+.text-container {
+  position: relative;
+  flex: 1;
+  color: white;
   display: flex;
-  justify-content:left ;
-  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
 }
 
 .carousel-inner {
-  position: relative;
-  width: 80%;
   display: flex;
-  justify-content: center;
+  width: 80%;
   align-items: center;
 }
 
 .carousel-image {
-  /* display: block; */
   border: 2px solid rgb(255, 215, 0);
   border-radius: 4%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.event-title {
+  font-family: serif; /* Use a serif font for the title */
+}
+
+.event-details {
+  margin-bottom: 1rem;
+  list-style-type: disc; /* Ensure bullet points */
 }
 
 .carousel-control-prev,

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Carousel.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,11 +21,19 @@ const Carousel = () => {
   return (
     <div className="carousel z-10 bg-[#393E46]">
       <div className="carousel-inner">
-        <div className='image-container'>
-        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="carousel-image h-60" />
+        <div className="image-container">
+          <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="carousel-image h-60" />
         </div>
-        <div className='text-container'>
-          <h2 className='text-6xl font-serif'>HackInnovision</h2>
+        <div className="text-container font-serif">
+          <h2 className="text-4xl font-bold mb-2">HackInnovision</h2>
+          <ol>
+            <li className="text-xl  "><i class="fa-regular fa-calendar mr-2"></i>Saturday, Aug 31</li>
+            <div className='flex '>
+              <i class="fa-solid fa-location-dot mt-2 ml-1 mr-2"></i>
+              <li className="text-xl">National Institute of Technology, Rourkela, Odisha</li>
+            </div>
+          </ol>
+          <p className="text-lg text-red-500 font-semibold mt-4">Registrations Closed</p>
         </div>
       </div>
       <button className="carousel-control-prev" onClick={goToPrevious}>

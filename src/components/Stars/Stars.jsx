@@ -37,7 +37,8 @@ const StarContainer = styled.div`
   width: 100%;
   height: 120%;
   transform: rotate(-45deg);
-  pointer-events:none;
+  pointer-events: none;
+  z-index: 0; /* Keep it at default to avoid disappearing */
 `;
 
 const Star = styled.div`

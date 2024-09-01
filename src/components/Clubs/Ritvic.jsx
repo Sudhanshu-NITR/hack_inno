@@ -7,7 +7,7 @@ export default function Ritvic() {
   };
 
   return (
-    <div className="bg-black p-8 rounded-xl shadow-2xl m-6 max-w-[80%]  mx-auto border-2 border-yellow-600">
+    <div className="relative z-10 bg-black bg-opacity-95 p-8 rounded-xl shadow-2xl m-6 max-w-[80%] mx-auto border-2 border-yellow-600">
       <h2 className="text-4xl font-bold font-serif text-orange-600 mb-6 border-b-2 border-blue-200 pb-2 text-center">
       Film & Music: Ritvic
       </h2>
@@ -70,7 +70,6 @@ export default function Ritvic() {
             className="w-12 h-12"
           ></img>
         </a>
-        
       </div>
     </div>
   );

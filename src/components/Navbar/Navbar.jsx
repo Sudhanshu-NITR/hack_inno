@@ -32,6 +32,8 @@ function Navbar({ setShowCarousel }) {
     ],
   };
 
+
+
   const handleCategoryClick = (category) => {
     if (activeCategory === category) {
       setActiveCategory(null);
@@ -47,13 +49,13 @@ function Navbar({ setShowCarousel }) {
   }, [location, setShowCarousel]);
 
   return (
-    <div className='mb-8 z-50'>
-      <div className="mt-4">
+    <div className='relative z-50 mb-8 opacity-95'>
+      <div className="mt-4 font-exo2">
         <div className="mx-auto bg-[#393E46] h-16 rounded-xl flex justify-center items-center shadow-xl shadow-black p-2 max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
           {Object.keys(clubs).map((category) => (
             <div
               key={category}
-              className="mx-2 sm:mx-4 rounded-md p-1 bg-black hover:bg-yellow-400 transform transition-transform duration-300 ease-in-out hover:scale-110"
+              className="mx-2 sm:mx-4 rounded-md px-1 bg-black hover:bg-yellow-400 transform transition-transform duration-300 ease-in-out hover:scale-110"
               onClick={() => handleCategoryClick(category)}
             >
               <span className="text-white hover:text-black text-[12px] sm:text-[16px] grid md:grid-cols-1 p-2 font-semibold cursor-pointer">
@@ -77,20 +79,20 @@ function Navbar({ setShowCarousel }) {
                 onMouseLeave={() => setIsHovered(false)}
               >
                 <ul className="text-black">
-                  <li className="px-2 py-1 sm:py-2 text-white hover:text-black hover:bg-red-300 text-[12px] sm:text-[16px] font-semibold">
-                    <a href="/events/hack-innovison">Hack Innovison 1.0 <br /> Aug 24th-25th, 2024</a>
+                  <li className="px-2 py-1 sm:py-2 text-red-500 hover:bg-black-300 text-[12px] sm:text-[16px] font-semibold">
+                    <a href="https://lu.ma/vgl8k90q" target='_blank'>Hack Innovison 1.0 <br /> Aug 31st- Sep 1st, 2024</a>
                   </li>
                   <li className="px-2 py-1 sm:py-2 text-white hover:text-black hover:bg-red-300 text-[12px] sm:text-[16px] font-semibold">
-                    <a href="/events/inter-nit-sports">Inter NIT Sports<br />Sep 18th-20th, 2024</a>
+                    <a href="/events/inter-nit-sports" target='_blank'>Inter NIT Sports<br />Sep 18th-20th, 2024</a>
                   </li>
                   <li className="px-2 py-1 sm:py-2 text-white hover:text-black hover:bg-red-300 text-[12px] sm:text-[16px] font-semibold">
-                    <a href="/events/hacknitr">HackNITR 6.0 <br /> Nov 16th-17th, 2024</a>
+                    <a href="https://hacknitr.com/" target='_blank'>HackNITR 6.0 <br /> Nov 16th-17th, 2024</a>
                   </li>
                   <li className="px-2 py-1 sm:py-2 text-white hover:text-black hover:bg-red-300 text-[12px] sm:text-[16px] font-semibold">
-                    <a href="/events/algoutsav">AlgoUtsav <br /> Feb 1st, 2025</a>
+                    <a href="https://unstop.com/hackathons/algoutsav-2024-nit-rourkela-905708" target='_blank'>AlgoUtsav <br /> Feb 1st, 2025</a>
                   </li>
                   <li className="px-2 py-1 sm:py-2 text-white hover:text-black hover:bg-red-300 text-[12px] sm:text-[16px] font-semibold">
-                    <a href="/events/nitrutsav">NitrUtsav <br /> Feb 7th-9th, 2025</a>
+                    <a href="https://www.nitrutsav.com/" target='_blank'>NitrUtsav <br /> Feb 7th-9th, 2025</a>
                   </li>
                 </ul>
               </div>

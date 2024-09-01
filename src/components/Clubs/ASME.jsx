@@ -1,41 +1,46 @@
 import React, { useState } from "react";
 
-export default function ASME() {
+export default function MechanicalClub() {
   const [showInductionOptions, setShowInductionOptions] = useState(false);
   const toggleInductionOptions = () => {
     setShowInductionOptions(!showInductionOptions);
   };
 
   return (
-    <div className="bg-black p-8 rounded-xl shadow-2xl m-6 max-w-[80%]  mx-auto border-2 border-yellow-600">
-      <h2 className="text-4xl font-bold font-serif text-blue-400 mb-6 border-b-2 border-blue-100 pb-2 text-center">
-        Technical Society: ASME
+    <div className="relative z-10 bg-black bg-opacity-95 p-8 rounded-xl shadow-2xl m-6 max-w-[80%] mx-auto border-2 border-yellow-600">
+      <h2 className="text-4xl font-bold font-serif text-red-400 mb-6 border-b-2 border-red-100 pb-2 text-center">
+        Technical Society: Mechanical Club
       </h2>
       <div className="flex justify-center items-center">
         <div className="">
           <h3 className="text-2xl font-semibold text-white mb-4">About: </h3>
           <p className="text-white text-1xl mb-6">
-          ASME
-The objective of ASME NIT Rourkela chapter is to provide the students, at the undergraduate level, a platform that would make them technically and professionally sound. Involvement in the day-to-day activities of the club guarantees that the students are prepared for their industrial or corporate workplace and aids in their overall growth. At the end of the day we strive to bring laurels to our institute and put NIT Rourkela at the forefront of developing and enriching young minds.
+            The Mechanical Club of NIT Rourkela is dedicated to providing a
+            platform for students to enhance their technical and practical
+            skills in the field of mechanical engineering. The club organizes
+            workshops, technical talks, and projects that help students gain
+            hands-on experience and prepare them for the challenges of the
+            industry.
           </p>
         </div>
-        <div className="club-logo float-right">
+        <div className="club-logo float-right ml-4">
           <img
             src="https://res.cloudinary.com/webwiznitr/image/upload/f_auto,q_70/v1679094978/Group_18128_yjg90h.png"
-            alt="" className="h-28 w-80 border-blue-200 border-2 rounded-md"  
-          />  
+            alt="Mechanical Club Logo"
+            className="h-28 w-80 border-gray-200 border-2 rounded-md"
+          />
         </div>
       </div>
-        
+
       <h3 className="text-2xl font-semibold text-white mb-4">Events:</h3>
       <ul className="list-disc list-inside text-1xl text-white space-y-2 pl-4">
-        <li className="hover:text-blue-600 transition-colors duration-200">
+        <li className="hover:text-red-600 transition-colors duration-200">
           Orientation program for 1st year
         </li>
-        <li className="hover:text-blue-600 text-1xl transition-colors duration-200">
-          Exciting Projects
+        <li className="hover:text-red-600 text-1xl transition-colors duration-200">
+          Exciting Mechanical Projects
         </li>
-        <li className="hover:text-blue-600 text-1xl transition-colors duration-200">
+        <li className="hover:text-red-600 text-1xl transition-colors duration-200">
           Year-long induction for sophomores
         </li>
       </ul>
@@ -43,7 +48,7 @@ The objective of ASME NIT Rourkela chapter is to provide the students, at the un
       <div className="mt-8">
         <button
           onClick={toggleInductionOptions}
-          className="text-2xl font-semibold text-white bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-lg shadow-md transform transition-transform duration-400 ease-in-out hover:scale-110"
+          className="text-2xl font-semibold text-white bg-red-600 hover:bg-red-700 py-2 px-4 rounded-lg shadow-md transform transition-transform duration-400 ease-in-out hover:scale-110"
         >
           Induction
         </button>
@@ -62,7 +67,7 @@ The objective of ASME NIT Rourkela chapter is to provide the students, at the un
 
       <div className="mt-9 flex items-center">
         <a
-          href="https://www.instagram.com/asme.nitrkl/"
+          href="https://www.instagram.com/mechanical.club/"
           target="_blank"
           className="transform transition-transform duration-300 ease-in-out hover:scale-110"
         >
@@ -72,7 +77,7 @@ The objective of ASME NIT Rourkela chapter is to provide the students, at the un
           ></img>
         </a>
         <a
-          href="https://www.linkedin.com/company/asmenitrourkela/?originalSubdomain=in"
+          href="https://www.linkedin.com/company/mechanical-club/"
           target="_blank"
           className="transform transition-transform duration-300 ease-in-out hover:scale-110"
         >

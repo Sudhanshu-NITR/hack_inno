@@ -7,25 +7,26 @@ export default function Opencode() {
   };
 
   return (
-    <div className="bg-black p-8 rounded-xl shadow-2xl m-6 max-w-[80%]  mx-auto border-2 border-yellow-600">
+    <div className="relative z-10 bg-black bg-opacity-95 p-8 rounded-xl shadow-2xl m-6 max-w-[80%] mx-auto border-2 border-yellow-600">
       <h2 className="text-4xl font-bold font-serif text-blue-400 mb-6 border-b-2 border-blue-200 pb-2 text-center">
         Technical Society: OpenCode
       </h2>
-      <div className="flex justify-center items-center">
-        <div className="">
+      <div className="flex justify-between items-center">
+        <div className="flex-1 mr-6">
           <h3 className="text-2xl font-semibold text-white mb-4">About: </h3>
           <p className="text-white text-1xl mb-6">
-          The official open-source and cybersecurity community of NIT Rourkela. OpenCode believes in "Code and Collaboration." We develop, upstream, and contribute to opensource projects providing a collaborative platform for developers to learn and upskill. We participate and win accolades in opensource programs, hackathons, and CTFs. We take pride in successfully organizing India's largest student run hackathon - HackNITR, become the first ever club in NIT Rourkela to organize a CTF - Brains 'n Brawns, conduct multiple hands-on workshops and informative sessions round the year. We drive action and focus on growth.
+            The official open-source and cybersecurity community of NIT Rourkela. OpenCode believes in "Code and Collaboration." We develop, upstream, and contribute to open-source projects, providing a collaborative platform for developers to learn and upskill. We participate and win accolades in open-source programs, hackathons, and CTFs. We take pride in successfully organizing India's largest student-run hackathon - HackNITR, becoming the first-ever club in NIT Rourkela to organize a CTF - Brains 'n Brawns, conduct multiple hands-on workshops and informative sessions round the year. We drive action and focus on growth.
           </p>
         </div>
-        <div className="club-logo float-right">
+        <div className="flex-shrink-0">
           <img
             src="https://res.cloudinary.com/webwiznitr/image/upload/f_auto,q_70/v1678968578/opencode_logo_-_Swatishree_Mahapatra_axvklg.jpg"
-            alt="" className="h-36 w-96 border-blue-400 border-2 rounded-md"  
-          />  
+            alt="Opencode Logo"
+            className="h-40 w-40 border-blue-400 border-2 rounded-md"
+          />
         </div>
       </div>
-        
+
       <h3 className="text-2xl font-semibold text-white mb-4">Events:</h3>
       <ul className="list-disc list-inside text-white space-y-2 pl-4">
         <li className="hover:text-blue-600 transition-colors duration-200">
