@@ -37,6 +37,7 @@ const StarContainer = styled.div`
   width: 100%;
   height: 120%;
   transform: rotate(-45deg);
+  pointer-events:none;
 `;
 
 const Star = styled.div`

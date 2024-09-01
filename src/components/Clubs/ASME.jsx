@@ -1,0 +1,87 @@
+import React, { useState } from "react";
+
+export default function ASME() {
+  const [showInductionOptions, setShowInductionOptions] = useState(false);
+  const toggleInductionOptions = () => {
+    setShowInductionOptions(!showInductionOptions);
+  };
+
+  return (
+    <div className="bg-black p-8 rounded-xl shadow-2xl m-6 max-w-[80%]  mx-auto border-2 border-yellow-600">
+      <h2 className="text-4xl font-bold font-serif text-blue-400 mb-6 border-b-2 border-blue-100 pb-2 text-center">
+        Technical Society: ASME
+      </h2>
+      <div className="flex justify-center items-center">
+        <div className="">
+          <h3 className="text-2xl font-semibold text-white mb-4">About: </h3>
+          <p className="text-white text-1xl mb-6">
+          ASME
+The objective of ASME NIT Rourkela chapter is to provide the students, at the undergraduate level, a platform that would make them technically and professionally sound. Involvement in the day-to-day activities of the club guarantees that the students are prepared for their industrial or corporate workplace and aids in their overall growth. At the end of the day we strive to bring laurels to our institute and put NIT Rourkela at the forefront of developing and enriching young minds.
+          </p>
+        </div>
+        <div className="club-logo float-right">
+          <img
+            src="https://res.cloudinary.com/webwiznitr/image/upload/f_auto,q_70/v1679094978/Group_18128_yjg90h.png"
+            alt="" className="h-28 w-80 border-blue-200 border-2 rounded-md"  
+          />  
+        </div>
+      </div>
+        
+      <h3 className="text-2xl font-semibold text-white mb-4">Events:</h3>
+      <ul className="list-disc list-inside text-1xl text-white space-y-2 pl-4">
+        <li className="hover:text-blue-600 transition-colors duration-200">
+          Orientation program for 1st year
+        </li>
+        <li className="hover:text-blue-600 text-1xl transition-colors duration-200">
+          Exciting Projects
+        </li>
+        <li className="hover:text-blue-600 text-1xl transition-colors duration-200">
+          Year-long induction for sophomores
+        </li>
+      </ul>
+
+      <div className="mt-8">
+        <button
+          onClick={toggleInductionOptions}
+          className="text-2xl font-semibold text-white bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-lg shadow-md transform transition-transform duration-400 ease-in-out hover:scale-110"
+        >
+          Induction
+        </button>
+
+        {showInductionOptions && (
+          <div className="mt-4 space-y-2">
+            <button className="w-full text-lg font-medium text-white bg-green-500 hover:bg-green-600 transition-colors duration-300 py-2 px-4 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-green-300">
+              1st Year
+            </button>
+            <button className="w-full text-lg font-medium text-white bg-purple-500 hover:bg-purple-600 transition-colors duration-300 py-2 px-4 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-purple-300">
+              2nd Year
+            </button>
+          </div>
+        )}
+      </div>
+
+      <div className="mt-9 flex items-center">
+        <a
+          href="https://www.instagram.com/asme.nitrkl/"
+          target="_blank"
+          className="transform transition-transform duration-300 ease-in-out hover:scale-110"
+        >
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-512.png"
+            className="w-12 h-12"
+          ></img>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/asmenitrourkela/?originalSubdomain=in"
+          target="_blank"
+          className="transform transition-transform duration-300 ease-in-out hover:scale-110"
+        >
+          <img
+            src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
+            className="w-12 h-12 ml-7"
+          ></img>
+        </a>
+      </div>
+    </div>
+  );
+}

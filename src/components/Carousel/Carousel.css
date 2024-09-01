@@ -5,16 +5,38 @@
   height: 350px;
   margin: auto;
   overflow: hidden;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container{
+  position: absolute;
+  left: 0; 
+  width: 40%;
+}
+
+.text-container{
+  position:absolute;
+  right: 0;
+  display: flex;
+  justify-content:left ;
+  /* align-items: center; */
 }
 
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-image {
-  width: 100%;
-  display: block;
+  /* display: block; */
+  border: 2px solid rgb(255, 215, 0);
+  border-radius: 4%;
 }
 
 .carousel-control-prev,
